@@ -1,7 +1,7 @@
 <?php
 
-Route::get('/filemanager', 'semilara\filemanager\FileManagerController@index');
-Route::post('/filemanager/upload', 'semilara\filemanager\FileManagerController@upload');
-Route::post('/filemanager/folder', 'semilara\filemanager\FileManagerController@folder');
-Route::post('/filemanager/delete', 'semilara\filemanager\FileManagerController@delete');
-Route::get('/filemanager/pagination', 'semilara\filemanager\FileManagerController@pagination');
+Route::get('/filemanager', 'devsemicolon\filemanager\FileManagerController@index');
+Route::post('/filemanager/upload', 'devsemicolon\filemanager\FileManagerController@upload');
+Route::post('/filemanager/folder', 'devsemicolon\filemanager\FileManagerController@folder');
+Route::post('/filemanager/delete', 'devsemicolon\filemanager\FileManagerController@delete');
+Route::get('/filemanager/pagination', 'devsemicolon\filemanager\FileManagerController@pagination');

@@ -1,6 +1,6 @@
 <?php 
 
-namespace Semilara\Filemanager;
+namespace Devsemicolon\Filemanager;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +14,7 @@ class FilemanagerServiceProvider extends ServiceProvider
     public function register()
     {
         include __DIR__.'/routes/web.php';
-        $this->app->make('Semilara\Filemanager\FileManagerController');
+        $this->app->make('Devsemicolon\Filemanager\FileManagerController');
     }
 
     /**

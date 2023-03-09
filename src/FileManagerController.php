@@ -1,6 +1,6 @@
 <?php
 
-namespace Semilara\Filemanager;
+namespace Devsemicolon\Filemanager;
 
 use App\Http\Controllers\Controller;
 
