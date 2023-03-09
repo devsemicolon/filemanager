@@ -1,0 +1,17 @@
+{
+    "name": "devsemicolon/filemanager",
+    "description": "A File Manager Package for Laravel",
+    "autoload": {
+        "psr-4": {
+            "Semicolon\\Filemanager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mayank Patel",
+            "email": "dev.semicolon@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
