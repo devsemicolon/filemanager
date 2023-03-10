@@ -1,20 +1,26 @@
 {
     "name": "devsemicolon/filemanager",
-    "type": "package",
     "description": "A File Manager Package for Laravel",
-    "autoload": {
-        "psr-4": {
-            "Devsemicolon\\Filemanager\\": "src/"
-        }
-    },
+    "keywords": [
+        "laravel",
+        "file",
+        "manager"
+    ],
     "authors": [
         {
             "name": "Mayank Patel",
-            "email": "dev.semicolon@gmail.com"
+            "email": "dev.semicolon@gmail.com",
+            "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/devsemicolon/filemanager",
     "minimum-stability": "dev",
     "require": {},
+    "autoload": {
+        "psr-4": {
+            "Devsemicolon\\Filemanager\\": "src"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
