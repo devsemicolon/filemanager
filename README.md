@@ -1,6 +1,6 @@
-# Laravel Imagemanager
+# Laravel File Manager
 
-Laravel Image Manager for v5.8.
+Laravel File Manager for v5.8.
 
 # Installation
 
