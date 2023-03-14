@@ -87,3 +87,21 @@ $(document).ready(function() {
     });
 
 });
+
+$("body").on('click', '#filemanager-data a.directory', function(e) {
+    e.preventDefault();
+
+    $('#modal-image').load($(this).attr('href'));
+});
+
+$("body").on('click', '#button-parent', function(e) {
+    e.preventDefault();
+
+    $('#modal-image').load($(this).attr('href'));
+});
+
+$("body").on('click', '#button-refresh', function(e) {
+    e.preventDefault();
+
+    $('#modal-image').load($(this).attr('href'));
+});

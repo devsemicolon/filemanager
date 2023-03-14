@@ -41,25 +41,6 @@ $("body").on('click', '#filemanager-data a.thumbnail', function(e) {
 });
 @endif
 
-
-$("body").on('click', '#filemanager-data a.directory', function(e) {
-	e.preventDefault();
-
-	$('#filemanager-data').load($(this).attr('href'));
-});
-
-$('#button-parent').on('click', function(e) {
-	e.preventDefault();
-
-	$('#filemanager-data').load($(this).attr('href'));
-});
-
-$('#button-refresh').on('click', function(e) {
-	e.preventDefault();
-
-	$('#filemanager-data').load($(this).attr('href'));
-});
-
 $('input[name=\'search\']').on('keydown', function(e) {
 	if (e.which == 13) {
 		$('#button-search').trigger('click');
