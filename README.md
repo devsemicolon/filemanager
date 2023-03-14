@@ -12,7 +12,7 @@ composer require devsemicolon/filemanager
 2. Publish the provider
 
 ```
-php artisan vendor:publish --provider="Devsemicolon\Filemanager\FilemanagerServiceProvider" --tag="filemanager" --force
+php artisan vendor:publish --tag=filemanager
 ```
 
 ## Usage
