@@ -75,7 +75,7 @@ class FileManagerController extends Controller
         }
 
 
-        $data['parent'] = url('filemanager?1=1'. $url);
+        $data['parent'] = url('filemanager/pagination?1=1'. $url);
 
         // Refresh
         $url = '';
@@ -88,7 +88,7 @@ class FileManagerController extends Controller
             $url .= '&target=' . $request->get('target');
         }
 
-        $data['refresh'] = url('filemanager?1=1'. $url);
+        $data['refresh'] = url('filemanager/pagination?1=1'. $url);
 
         $url = '';
 
@@ -192,7 +192,7 @@ class FileManagerController extends Controller
                     'name'  => implode(' ', $name),
                     'type'  => 'directory',
                     'path'  => mb_substr($image, mb_strlen($this->storage_path)),
-                    'href'  => url('filemanager?directory=' . urlencode(mb_substr($image, mb_strlen($this->storage_path.'/'))) . $url)
+                    'href'  => url('filemanager/pagination?directory=' . urlencode(mb_substr($image, mb_strlen($this->storage_path.'/'))) . $url)
                 );
             } elseif (is_file($image)) {
                 $data['images'][] = array(

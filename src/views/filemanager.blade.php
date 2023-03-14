@@ -45,19 +45,19 @@ $("body").on('click', '#filemanager-data a.thumbnail', function(e) {
 $("body").on('click', '#filemanager-data a.directory', function(e) {
 	e.preventDefault();
 
-	$('#modal-image').load($(this).attr('href'));
+	$('#filemanager-data').load($(this).attr('href'));
 });
 
 $('#button-parent').on('click', function(e) {
 	e.preventDefault();
 
-	$('#modal-image').load($(this).attr('href'));
+	$('#filemanager-data').load($(this).attr('href'));
 });
 
 $('#button-refresh').on('click', function(e) {
 	e.preventDefault();
 
-	$('#modal-image').load($(this).attr('href'));
+	$('#filemanager-data').load($(this).attr('href'));
 });
 
 $('input[name=\'search\']').on('keydown', function(e) {
