@@ -26,8 +26,6 @@ php artisan vendor:publish --tag=filemanager
 3. Add these to ```<head>``` tag
 ```
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<script src="{{ asset('js/app.js') }}" defer></script>
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('css/filemanager.css') }}" rel="stylesheet">
 <link href="{{ asset('css/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
 ```
