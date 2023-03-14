@@ -9,6 +9,11 @@ Laravel File Manager for v5.8.
 ```
 composer require devsemicolon/filemanager
 ```
+2. Publish the provider
+
+```
+php artisan vendor:publish --provider="Devsemicolon\Filemanager\FilemanagerServiceProvider" --tag="filemanager" --force
+```
 
 ## Usage
 1. Add site's non public url to .env's ```APP_URL```
