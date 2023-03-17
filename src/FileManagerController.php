@@ -128,6 +128,8 @@ class FileManagerController extends Controller
             $directory = $this->storage_path;
         }
 
+        $data['directory'] = $request->get('directory') ?? '';
+
         if (null !== $request->get('page')) {
             $page = $request->get('page');
         } else {

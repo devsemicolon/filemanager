@@ -26,13 +26,13 @@
 </div>
 <script type="text/javascript"><!--
 @if($data['target'] != '')
-$("body").on('click', '#filemanager-data a.thumbnail', function(e) {
+$("body").on('click', '#filemanager-data .semi-thumbnail', function(e) {
 	e.preventDefault();
 	//set scr
 	$('#{{ $data['target'] }}').parent().find('div.image-manager-image-div').find('img').attr('src', $(this).find('img').attr('src'));
 	//make div visible
 	$('#{{ $data['target'] }}').parent().find('div.image-manager-image-div').show();
-	//hide <button
+	//hide <button>
 	$('#{{ $data['target'] }}').parent().find('.image-manager-button').hide();
 	
 	$('#{{ $data['target'] }}').val($(this).parent().find('input').val());
@@ -55,7 +55,6 @@ $('#button-search').on('click', function(e) {
 	if (filter_name) {
 		url += '&filter_name=' + encodeURIComponent(filter_name);
 	}
-
 
 	@if($data['target'] != '')
 	url += '&target=' + '{{ $data["target"] }}';
@@ -133,7 +132,6 @@ $('#button-folder').popover({
 
 $('#button-folder').on('shown.bs.popover', function() {
 	$('#button-create').on('click', function() {
-	console.log('hello1');
 		$.ajax({
 			url: '{{ url('filemanager/folder?directory='.$data['directory']) }}',
 			type: 'post',
